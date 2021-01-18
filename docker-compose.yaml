@@ -5,4 +5,4 @@ services:
     command: /bin/bash
     container_name: diagrams
     volumes:
-      - workspace:/workspace
+      - ./workspace:/workspace
