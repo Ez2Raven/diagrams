@@ -32,8 +32,6 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v2
         with:
-          context: .
-          file: ./Dockerfile
           push: true
           tags: ez2raven/diagrams:python-3.9.1
           labels: ${{ steps.docker_meta.outputs.labels }}
