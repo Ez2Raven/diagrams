@@ -33,7 +33,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ez2raven/diagrams:python-3.9.1, ez2raven/diagrams:latest
+          tags: ez2raven/diagrams:v0.21.1, ez2raven/diagrams:latest
           labels: ${{ steps.docker_meta.outputs.labels }}
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
